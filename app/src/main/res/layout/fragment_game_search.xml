@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+
+                <EditText
+                    android:id="@+id/summoner_name"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Summoner Name"
+                    android:imeOptions="actionSend"
+                    android:layout_marginLeft="16dp"
+                    android:lines="1" />
+
+                <Spinner
+                    android:id="@+id/regions"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/searchbuttononclick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#ff000000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="28dp"
+                    android:text="USER_NAME"
+                    android:textColor="#fff"
+                    android:id="@+id/game_search_player_one_name"
+                    android:lines="1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ryzesquare"
+                    android:id="@+id/game_search_player_one_champion"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/game_search_player_one_summoner_spell_one"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/rumblesquare"
+                    android:layout_height="40dp"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rivensquare"
+                    android:id="@+id/game_search_player_one_summoner_spell_two"
+                    android:layout_marginLeft="4dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
